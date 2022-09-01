@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Follow Up Survey</title>
+
+    <!-- CSS Page -->
+    <link rel="stylesheet" href="app.css" />
+
+    <!-- Google font Rubik for Main Header -->
+    <link rel="stylesheet" href="fonts.css"/>
+  </head>
+  <body>
+    <main>
+    <header>
+      <h1>Follow Up Survey</h1>
+    </header>
+
+    <section>
+      <form action="#">
+        <div>
+          <span class="title element">When did you use our service?</span>
+          <span class="title element">Name of product or service</span>
+            <span class="element">
+          <input class="textInp" type="date" />
+          </span>
+          <span class="element">
+          <input class="textInp" type="text" />
+        </span>  
+          <span class="date">Date</span>
+        </div>
+
+        <div>
+          <p class="title">Overall, how satisfied are you with the product or service?</p>
+            <div class="element">
+              <input
+                type="radio"
+                id="verySatisfied"
+                name="satisfaction"
+                value="verySatisfied"
+              />
+              <label for="verySatisfied">Very satisfied</label><br />
+              </div>
+              <div class="element">
+              <input
+                type="radio"
+                id="satisfied"
+                name="satisfaction"
+                value="satisfied"
+              />
+              <label for="satisfied">Satisfied</label><br />
+            </div>
+            <div class="element">
+              <input
+                type="radio"
+                id="neutral"
+                name="satisfaction"
+                value="neutral"
+              />
+              <label for="neutral">Neutral</label>
+            </div>
+            <div class="element">
+              <input
+                type="radio"
+                id="unSatisfied"
+                name="satisfaction"
+                value="unsatisfied"
+              />
+              <label for="unsatisfied">Unsatisfied</label>
+            </div>
+            <div class="element">
+              <input
+                type="radio"
+                id="css"
+                name="satisfaction"
+                value="veryUnsatisfied"
+              />
+              <label for="veryUnsatisfied">Very unsatisfied</label>
+            </div>
+            <div class="element">
+              <input type="radio" id="na" name="satisfaction" value="na" />
+              <label for="na">N/A</label>
+            </div>
+          </div>
+
+        <div>
+          <p class="title">Did our product or service meet your expectations?</p>
+            <div class="element">
+              <input type="radio" id="yes" name="meetExp" value="yes" />
+              <label for="yes">Yes</label>
+            </div>
+            <div class="element">
+              <input type="radio" id="no" name="meetExp" value="no" />
+              <label for="no">No</label>
+            </div>
+        </div>
+
+        <div>
+          <p class="title">Would you recommend this product or service to a friend?</p>
+            <div class="element">
+              <input type="radio" id="recom" name="recommended" value="yes" />
+              <label for="recom">Yes</label>
+            </div>
+            <div class="element">
+              <input type="radio" id="notrecom" name="recommended" value="no" />
+              <label for="notrecom">No</label>
+            </div>
+        </div>
+
+        <div>
+          <p class="title">
+            What aspect of the product or service were you most satisfied by?
+          </p>
+            <div class="element">
+              <input
+                type="radio"
+                id="mquality"
+                name="mostSatisfied"
+                value="quality"
+              />
+              <label for="mquality">Quality</label>
+            </div>
+            <div class="element">
+              <input
+                type="radio"
+                id="mprice"
+                name="mostSatisfied"
+                value="price"
+              />
+              <label for="mprice">Price</label>
+            </div>
+            <div class="element">
+              <input type="radio" id="mcs" name="mostSatisfied" value="cs" />
+              <label for="mcs">Customer Service</label>
+            </div>
+            <div class="element">
+              <input
+                type="radio"
+                id="mfirst"
+                name="mostSatisfied"
+                value="installorfirstUX"
+              />
+              <label for="mfirst">Installation or first use experience</label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="title">
+            What aspect of the product or service were you least satisfied by?
+          </p>
+            <div class="element">
+              <input
+                type="radio"
+                id="lquality"
+                name="leastSatisfied"
+                value="quality"
+              />
+              <label for="lquality">Quality</label>
+            </div>
+            <div class="element">
+              <input
+                type="radio"
+                id="lprice"
+                name="leastSatisfied"
+                value="price"
+              />
+              <label for="lprice">Price</label>
+            </div>
+            <div class="element">
+              <input type="radio" id="lcs" name="leastSatisfied" value="cs" />
+              <label for="lcs">Customer Service</label>
+            </div>
+            <div class="element">
+              <input
+                type="radio"
+                id="lfirst"
+                name="leastSatisfied"
+                value="installorfirstUX"
+              />
+              <label for="lirst">Installation or first use experience</label>
+            </div>
+          </div>
+
+        <div class="comments">
+          <label class="title" for="comment">Additional comments:</label>
+          <textarea
+            id="comment"
+            rows="10"
+            placeholder="Type here..."
+          ></textarea>
+        </div>
+
+        <div class="submitBtn">
+        <button type="submit">Submit</button>
+        </div>
+
+      </form>
+      </section>
+      
+    </main>
+  </body>
+</html>

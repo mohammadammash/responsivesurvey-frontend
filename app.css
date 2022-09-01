@@ -1,0 +1,101 @@
+/* BODY */
+body {
+  font-family: sans-serif;
+  background-color: #acacaa;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+}
+
+
+/* MAIN CONTENT */
+main {
+  margin: 3% 28%;
+  border: 2px solid black;
+  background-color: #e6e5e5;
+  border: 0;
+  color: #b72637;
+}
+
+
+/* HEADER */
+header {
+  font-family: 'Dela Gothic One', 'cursive';
+  background-color: #fefefe;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  color: #77363e;
+}
+
+
+/* ALL QUESTIONS' TITLES */
+.title {
+  color: #7e2029;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+
+/* MAIN SECTION */
+section {
+  padding: 2% 5%;
+}
+
+.date {
+  margin-top: 3px;
+  color: rgb(135, 135, 135);
+  font-size: 12px;
+}
+.element {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 49%;
+}
+.textInp {
+  width: 90%;
+  height: 23px;
+  border: 0.2px solid rgb(213, 212, 212);
+  margin-top: 10px;
+}
+p {
+  margin-bottom: 2px;
+}
+input[type="radio"] {
+  margin-bottom: 8px;
+}
+
+
+
+/* COMMENTS*/
+.comments {
+  margin: 30px 0.6%;
+}
+textarea {
+  width: 100%;
+  border: 0.2px solid rgb(213, 212, 212);
+  border-radius: 5px;
+}
+
+
+/* Submit Button */
+button[type="submit"] {
+  display: block;
+  padding: 8px 40px;
+  color: white;
+    background: linear-gradient(rgb(92, 92, 92), #808080);
+  border-radius: 4px;
+  border: 0;
+}
+.submitBtn {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 10px 0;
+}
