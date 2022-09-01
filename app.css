@@ -1,3 +1,10 @@
+/* Easy Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* BODY */
 body {
   font-family: sans-serif;
@@ -33,6 +40,7 @@ header {
 
 /* ALL QUESTIONS' TITLES */
 .title {
+  margin-top: 10px;
   color: #7e2029;
   font-weight: 500;
   font-size: 15px;
@@ -52,8 +60,12 @@ section {
 .container {
   display: flex;
   justify-content: space-between;
-  padding-left: 0;
+  flex-wrap: wrap;
 }
+.sec1, .sec2{
+  flex: 1 0 200px; 
+}
+
 
 
 .textInp {
@@ -95,24 +107,3 @@ button[type="submit"] {
 }
 
 
-/* Responsive */
-@media screen and (max-width: 1000px) {
-  main{
-    margin: 10px 20%;
-  }
-  .container{
-    flex-wrap: wrap;
-  }
-  .sec1, .sec2{
-    flex-basis: 100%;
-  }
-}
-
-@media screen and (min-width: 1001px){
-  .container{
-    flex-wrap: nowrap;
-  }
-  .sec1, .sec2{
-    flex-basis: 50%;
-  }
-}
