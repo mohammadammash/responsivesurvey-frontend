@@ -10,7 +10,6 @@ body {
   font-size: 14px;
 }
 
-
 /* MAIN CONTENT */
 main {
   margin: 3% 28%;
@@ -20,10 +19,9 @@ main {
   color: #b72637;
 }
 
-
 /* HEADER */
 header {
-  font-family: 'Dela Gothic One', 'cursive';
+  font-family: "Dela Gothic One", "cursive";
   background-color: #fefefe;
   height: 100px;
   display: flex;
@@ -33,14 +31,12 @@ header {
   color: #77363e;
 }
 
-
 /* ALL QUESTIONS' TITLES */
 .title {
   color: #7e2029;
   font-weight: 500;
   font-size: 15px;
 }
-
 
 /* MAIN SECTION */
 section {
@@ -53,13 +49,10 @@ section {
   font-size: 12px;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: space-between;
   padding-left: 0;
-}
-.sec2{
-  width:50%;
 }
 
 
@@ -67,7 +60,7 @@ section {
   width: 90%;
   height: 23px;
   border: 0.2px solid rgb(213, 212, 212);
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 p {
   margin-bottom: 2px;
@@ -75,8 +68,6 @@ p {
 input[type="radio"] {
   margin-bottom: 8px;
 }
-
-
 
 /* COMMENTS*/
 .comments {
@@ -88,13 +79,12 @@ textarea {
   border-radius: 5px;
 }
 
-
 /* Submit Button */
 button[type="submit"] {
   display: block;
   padding: 8px 40px;
   color: white;
-    background: linear-gradient(rgb(92, 92, 92), #808080);
+  background: linear-gradient(rgb(92, 92, 92), #808080);
   border-radius: 4px;
   border: 0;
 }
@@ -102,4 +92,27 @@ button[type="submit"] {
   display: flex;
   justify-content: center;
   margin: 40px 0 10px 0;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  main{
+    margin: 10px 20%;
+  }
+  .container{
+    flex-wrap: wrap;
+  }
+  .sec1, .sec2{
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 1001px){
+  .container{
+    flex-wrap: nowrap;
+  }
+  .sec1, .sec2{
+    flex-basis: 50%;
+  }
 }
